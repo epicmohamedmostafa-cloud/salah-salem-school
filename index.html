@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>موقع مدرسة صلاح سالم الثانوية بنين</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="https://placehold.co/60x60?text=كلية" alt="شعار الكلية" class="logo">
+            <h1>موقع مدرسة صلاح سالم الثانوية بنين</h1>
+            <img src="https://flagcdn.com/eg.svg" alt="علم مصر" class="flag" width="60">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عن المدرسة</a></li>
+            <li><a href="#student">الطالب</a></li>
+            <li><a href="#supervisor">الإشراف</a></li>
+            <li><a href="#contact">تواصل</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>أهلاً بكم في مدرسة صلاح سالم الثانوية بنين</h2>
+            <p>مدرسة حكومية متميزة تهدف إلى بناء جيل واعٍ ومبدع</p>
+            <img src="https://placehold.co/600x300?text=صورة+المدرسة" alt="مدرسة صلاح سالم" class="hero-img">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>عن المدرسة</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-school"></i>
+                    <h3>اسم المدرسة</h3>
+                    <p>صلاح سالم الثانوية بنين</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-university"></i>
+                    <h3>الجامعة التابعة</h3>
+                    <p>كلية التربية النوعية</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>الموقع</h3>
+                    <p>القاهرة - مدينة نصر</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="student">
+        <div class="container">
+            <h2>بيانات الطالب</h2>
+            <div class="profile">
+                <img src="https://placehold.co/150x150?text=محمد" alt="محمد مصطفى كامل" class="profile-img">
+                <div class="profile-info">
+                    <h3>محمد مصطفى كامل</h3>
+                    <p><strong>الصف:</strong> الرابع - قسم تكنولوجيا التعليم</p>
+                    <p><strong>الكلية:</strong> كلية التربية النوعية</p>
+                    <p><strong>رقم الجلوس:</strong> 240156</p>
+                    <p><strong>البريد:</strong> mohamed.mk@example.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="supervisor">
+        <div class="container">
+            <h2>الإشراف الأكاديمي</h2>
+            <div class="profile">
+                <img src="https://placehold.co/150x150?text=د.رضوى" alt="د. رضوى أمير" class="profile-img">
+                <div class="profile-info">
+                    <h3>د. رضوى أمير</h3>
+                    <p><strong>المنصب:</strong> أستاذ تكنولوجيا التعليم</p>
+                    <p><strong>الكلية:</strong> كلية التربية النوعية</p>
+                    <p><strong>البريد:</strong> dr.radwa@edu.eg</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="الاسم" required />
+                <input type="email" placeholder="البريد الإلكتروني" required />
+                <textarea placeholder="رسالتك" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
+            <p class="success" id="success-msg" style="display:none;">تم إرسال الرسالة بنجاح!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 مدرسة صلاح سالم الثانوية بنين | تصميم: محمد مصطفى كامل</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
