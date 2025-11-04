@@ -1,0 +1,45 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Tajawal', sans-serif; background: #f4f7fa; color: #333; direction: rtl; line-height: 1.7; }
+.container { max-width: 1200px; margin: auto; padding: 0 20px; }
+
+header { background: linear-gradient(135deg, #003087, #005eb8); color: white; text-align: center; padding: 20px 0; }
+header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.logo, .flag { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 3px solid white; }
+header h1 { font-size: 1.8rem; flex: 1; margin: 0 20px; }
+
+nav { background: #003087; position: sticky; top: 0; z-index: 100; }
+nav ul { display: flex; justify-content: center; list-style: none; flex-wrap: wrap; }
+nav a { color: white; text-decoration: none; padding: 15px 20px; display: block; transition: 0.3s; }
+nav a:hover { background: #005eb8; }
+
+.hero { text-align: center; padding: 60px 20px; background: #e6f0fa; }
+.hero h2 { font-size: 2.5rem; color: #003087; margin-bottom: 20px; }
+.hero-img { width: 100%; max-width: 600px; border-radius: 15px; margin-top: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+section { padding: 60px 0; }
+section h2 { text-align: center; color: #003087; margin-bottom: 40px; font-size: 2rem; position: relative; }
+section h2::after { content: ''; width: 80px; height: 4px; background: #005eb8; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); }
+
+.info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.info-card { background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+.info-card:hover { transform: translateY(-10px); }
+.info-card i { font-size: 2.5rem; color: #005eb8; margin-bottom: 15px; }
+
+.profile { display: flex; align-items: center; flex-wrap: wrap; gap: 30px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+.profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 5px solid #005eb8; }
+.profile-info h3 { color: #003087; margin-bottom: 15px; }
+
+#contact form { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+#contact input, #contact textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; font-family: 'Tajawal', sans-serif; }
+#contact button { background: #003087; color: white; border: none; padding: 12px 30px; border-radius: 8px; cursor: pointer; font-size: 1.1rem; transition: 0.3s; }
+#contact button:hover { background: #005eb8; }
+.success { text-align: center; color: green; font-weight: bold; margin-top: 15px; }
+
+footer { background: #003087; color: white; text-align: center; padding: 20px 0; margin-top: 50px; }
+
+@media (max-width: 768px) {
+    header .container { flex-direction: column; text-align: center; }
+    header h1 { margin: 15px 0; font-size: 1.5rem; }
+    .profile { flex-direction: column; text-align: center; }
+    .profile-img { width: 120px; height: 120px; }
+}
